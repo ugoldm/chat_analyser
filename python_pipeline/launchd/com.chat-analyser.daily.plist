@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.chat-analyser.daily</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd "/Users/ugoldm/Documents/Cursor projects/chat_analyser/python_pipeline" &amp;&amp; export TG_API_ID="your_api_id" TG_API_HASH="your_api_hash" DEFAULT_CHAT="selfworkchat" FETCH_LIMIT="5000" LLM_API_KEY="your_llm_api_key" LLM_MODEL="your_model" &amp;&amp; /usr/bin/python3 run_daily.py --chat selfworkchat</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/ugoldm/Documents/Cursor projects/chat_analyser/python_pipeline</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/ugoldm/Documents/Cursor projects/chat_analyser/python_pipeline/output/reports/launchd_stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/ugoldm/Documents/Cursor projects/chat_analyser/python_pipeline/output/reports/launchd_stderr.log</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+</dict>
+</plist>
