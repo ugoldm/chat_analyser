@@ -1,0 +1,10 @@
+{
+  "chat": "selfworkchat",
+  "chat_slug": "selfworkchat",
+  "title": "Беседа Самозанятые.рф",
+  "fetched_new_messages": 0,
+  "last_message_id_before": 205473,
+  "last_message_id_after": 205473,
+  "daily_file": "/Users/ugoldm/Documents/Cursor projects/chat_analyser/output/raw/selfworkchat/2026-03-07.json",
+  "state_file": "/Users/ugoldm/Documents/Cursor projects/chat_analyser/state/selfworkchat.json"
+}
